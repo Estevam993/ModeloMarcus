@@ -40,32 +40,238 @@ header h1 i:hover {
 }
 #content-1 #text1 {
   display: flex;
-  text-align: center;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
+  margin-right: 15px;
   border-bottom: #172F63 solid 2px;
   border-left: #172F63 solid 2px;
   border-bottom-left-radius: 20px;
+  width: 850px;
+  text-align: start;
+  padding: 30px;
+  /*medias*/
+  /*medias*/
 }
-@media (max-width: 340px) {
+@media (max-width: 1440px) {
   #content-1 #text1 {
-    width: 300px;
-    height: 150px;
-    min-width: 280px;
-    border-left: none;
-    border-bottom-left-radius: 0px;
+    width: 850px;
+    text-align: start;
+    padding: 30px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
   #content-1 #text1 {
-    width: 300px;
-    height: 150px;
+    width: 850px;
+    text-align: start;
+    padding: 30px;
+  }
+}
+@media (max-width: 780px) {
+  #content-1 #text1 {
+    width: 500px;
+    text-align: start;
+    padding: 30px;
   }
 }
 @media (max-width: 425px) {
   #content-1 #text1 {
     width: 350px;
     height: 150px;
+    padding: 15px;
+  }
+}
+@media (max-width: 375px) {
+  #content-1 #text1 {
+    width: 300px;
+    height: 150px;
+    padding: 15px;
+  }
+}
+@media (max-width: 340px) {
+  #content-1 #text1 {
+    width: 280px;
+    height: 150px;
+    min-width: 280px;
+    border-left: none;
+    border-bottom-left-radius: 0px;
+  }
+}
+#content-1 #text2 {
+  width: 850px;
+  text-align: start;
+  padding: 30px;
+  margin-top: 20px;
+  font-size: 20pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+#content-1 #text2 #btn1 {
+  border: #172F63 solid 2px;
+  border-radius: 2px;
+  background: none;
+  padding: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #172F63;
+  transition: 0.2s;
+  display: none;
+  font-weight: 600;
+}
+#content-1 #text2 #btn1:hover {
+  background-color: #172F63;
+  color: #FFAA00;
+  border: #FFAA00 solid 2px;
+}
+@media (max-width: 600px) {
+  #content-1 #text2 #btn1 {
+    display: block;
+  }
+}
+@media (max-width: 1440px) {
+  #content-1 #text2 {
+    width: 850px;
+    text-align: start;
+    padding: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  #content-1 #text2 {
+    width: 850px;
+    text-align: start;
+    padding: 30px;
+    font-size: 15pt;
+  }
+}
+@media (max-width: 780px) {
+  #content-1 #text2 {
+    width: 500px;
+    text-align: start;
+    padding: 30px;
+  }
+}
+@media (max-width: 425px) {
+  #content-1 #text2 {
+    width: 350px;
+    height: 150px;
+    padding: 15px;
+    font-size: 13pt;
+    margin-top: 140px;
+  }
+}
+@media (max-width: 375px) {
+  #content-1 #text2 {
+    width: 300px;
+    height: 150px;
+    padding: 15px;
+    font-size: 13pt;
+  }
+}
+@media (max-width: 340px) {
+  #content-1 #text2 {
+    font-size: 12pt;
+    width: 280px;
+    height: 150px;
+    min-width: 280px;
+    border-left: none;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+#content-2 {
+  background-color: #172F63;
+  min-height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  font-size: 15pt;
+  color: white;
+}
+#content-2 #textoDesafio {
+  max-width: 1100px;
+  padding: 30px;
+  text-align: center;
+}
+#content-2 #textoDesafio max p {
+  margin-top: 25px;
+}
+@media (max-width: 425px) {
+  #content-2 #textoDesafio {
+    font-size: 12pt;
+  }
+}
+#content-2 #desafioBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #172F63;
+  font-size: 12pt;
+}
+#content-2 #desafioBox #box {
+  padding: 25px;
+  cursor: pointer;
+  width: 300px;
+  height: 270px;
+  background-color: #FFAA00;
+  border-radius: 7px;
+  box-shadow: #122550 2px;
+  transition: 0.6s;
+  margin: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#content-2 #desafioBox #box:hover {
+  transform: scale(1.05);
+  box-shadow: #122550 5px;
+}
+#content-2 #desafioBox #box #h4 {
+  margin-top: -35px;
+}
+#content-2 #desafioBox #box h1 i {
+  color: white;
+  position: relative;
+  bottom: 45px;
+  left: -10px;
+  font-size: 25pt;
+}
+#content-2 #desafioBox #box #btn2 {
+  border: #172F63 solid 2px;
+  border-radius: 2px;
+  background: none;
+  padding: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #172F63;
+  transition: 0.2s;
+  display: block;
+  font-weight: 600;
+}
+#content-2 #desafioBox #box #btn2:hover {
+  background-color: #172F63;
+  color: #FFAA00;
+  border: #FFAA00 solid 2px;
+}
+@media (max-width: 2560px) {
+  #content-2 #desafioBox #box {
+    flex-direction: row;
+  }
+}
+@media (max-width: 780px) {
+  #content-2 #desafioBox #box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  #content-2 #desafioBox #box {
+    width: 250px;
+    height: 250px;
   }
 }
 
