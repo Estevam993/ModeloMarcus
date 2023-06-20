@@ -47,11 +47,25 @@ header h1 i:hover {
   border-left: #172F63 solid 2px;
   border-bottom-left-radius: 20px;
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   #content-1 #text1 {
-    width: 280px;
+    width: 300px;
     height: 150px;
     min-width: 280px;
+    border-left: none;
+    border-bottom-left-radius: 0px;
+  }
+}
+@media (max-width: 375px) {
+  #content-1 #text1 {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media (max-width: 425px) {
+  #content-1 #text1 {
+    width: 350px;
+    height: 150px;
   }
 }
 
