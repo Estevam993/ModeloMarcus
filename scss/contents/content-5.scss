@@ -1,0 +1,61 @@
+
+#content-5{
+    background-color: white;
+    min-height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    font-size: 15pt;
+    color: $primary-color;
+
+    #market{
+        max-width: 1100px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+
+        #boxes{
+            #caixa1{
+                display: block;
+            }#caixa2{
+                display: none;
+            }#caixa3{
+                display: none;
+            }
+            .caixas{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                color: $primary-color;
+                font-size: 12pt;
+                @media (max-width:780px) {
+                    flex-direction: column;            
+                }
+                #box{
+                    width: 279px;
+                    height: 300px;
+                    margin: 15px;
+                    background-color: white;
+                    color: $primary-color;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    backdrop-filter: blur(15px);
+                    text-align: start;                
+                    img{
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                    }
+                    h5{
+                        margin-left: 4%;
+                    }
+                }
+            }   
+        }
+    }
+}

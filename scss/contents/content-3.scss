@@ -1,0 +1,117 @@
+
+#content-3{
+    background-color: $primary-color;
+    min-height: 580px;
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    color: $secondary-color;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @media (max-width: 500px){
+        flex-direction: column;
+    }
+
+    #imgt{
+        max-width: 1100px;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media(max-width:2560px){
+            justify-content: space-evenly;
+            
+        }
+
+        @media (max-width:425px){
+
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-right: 40px;
+        }
+        @media (max-width:320px){
+
+            margin-left: -11%;
+        }
+
+        #img{
+            width: 280px;
+            height: 427px;
+            
+
+            img{
+                border-top-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+            }
+
+            @media(max-width:375px){
+                
+                margin-left: 25px;
+            }
+            
+        }
+        #text{
+            background-color: rgba(255, 255, 255, 0);
+
+            flex: 1 0 auto;
+            min-width: 200px;
+            @media (max-width:2560px) {
+                margin-left: 90px;
+                width: 400px;
+                h3{
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 16pt;
+                }
+            }
+            @media (max-width:1440px) {
+                margin-left: 70px;
+
+                width: 400px;
+
+            }
+            @media (max-width:1024px) {
+                margin-left: 50px;
+                width: 400px;
+
+            }
+            @media (max-width:780px) {
+                margin-left: 30px;
+                width: 320px;
+                h3{
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 13pt;
+                }
+            }
+            @media (max-width:425px) {
+                h3{
+                    font-weight: 400;
+                }
+                p{
+                    font-size: 12pt;
+                }
+            }
+            
+            @media(max-width:375px){
+                width: 280px;
+                padding-right: 25px;
+            }
+
+            @media(max-width:320px){
+
+                margin-right: 0px;
+                h3{
+                    font-weight: 300;
+                }
+                p{
+                    font-size: 10pt;
+                }
+            }
+        }
+    } 
+}
