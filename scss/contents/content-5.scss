@@ -27,11 +27,8 @@
             }#caixa3{
                 display: none;
             }
+        
             .caixas{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
                 color: $primary-color;
                 font-size: 12pt;
                 @media (max-width:780px) {
@@ -45,7 +42,6 @@
                     color: $primary-color;
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
-                    backdrop-filter: blur(15px);
                     text-align: start;                
                     img{
                         border-top-left-radius: 20px;
