@@ -25,9 +25,50 @@
   align-items: center;
   margin: auto;
 }
+.header header #dropdown {
+  display: none;
+}
+.header header #links {
+  display: flex;
+  flex-direction: row;
+  font-size: 15pt;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+  width: 300px;
+}
+.header header #links #link button {
+  text-decoration: none;
+  color: white;
+  background: none;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+.header header #links #link button:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #172F63;
+  transition: width 0.4s;
+}
+.header header #links #link button:hover:after {
+  width: 100%;
+}
 @media (max-width: 1024px) {
   .header header {
     justify-content: space-evenly;
+  }
+}
+@media (max-width: 1023px) {
+  .header header #links {
+    display: none;
+  }
+  .header header #dropdown {
+    display: block;
   }
 }
 .header header h1 i {
@@ -249,7 +290,7 @@
   height: 90px;
 }
 #content-2 #desafioBox #box h1 i {
-  background-color: #cf8a00;
+  background-color: rgba(187, 121, 0, 0.7882352941);
   padding: 5px;
   border-radius: 100%;
   color: #172F63;

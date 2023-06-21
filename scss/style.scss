@@ -26,10 +26,55 @@
         justify-content: space-between;
         align-items: center;
         margin: auto;    
-    
+        #dropdown{
+            display: none;
+        }
+
+        #links{
+            display: flex;
+            flex-direction: row;
+            font-size: 15pt;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: space-between;
+            width: 300px;
+
+            #link button {
+                text-decoration: none;
+                color: white;
+                background: none;
+                border: none;
+                position: relative;
+                overflow: hidden;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: 3px;
+                    background-color: $primary-color;
+                    transition: width 0.4s;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                }
+            }
+        }
+        
         @media (max-width: 1024px){
-    
             justify-content: space-evenly;
+            
+        }
+        @media (max-width:1023px){
+            #links{
+                display: none;
+            }
+            #dropdown{
+                display: block;
+            }
         }
     
         h1 i{
@@ -250,7 +295,7 @@
             }
 
             h1 i{
-                background-color: $secondary-color-2;
+                background-color: $secondary-color-3;
                 padding: 5px;
                 border-radius: 100%;
                 color: $primary-color;
@@ -421,7 +466,6 @@
     padding-top: 40px;
     font-size: 15pt;
     color: $primary-color;
-
     #sol{
         display: flex;
         justify-content: center;
@@ -434,11 +478,9 @@
         @media (max-width:425px){
             margin-left: 40px;
         }
-
         @media (max-width:320px){
             margin-left: 10px;
         }
-
         #solucoes{
             @media(min-width: 1280px){
                 width: 500px;
@@ -448,7 +490,6 @@
                 width: 300px;
             }
         }
-
         #opcoes{
             display: flex;
             flex-direction: column;
@@ -468,7 +509,6 @@
                 overflow: hidden;
                 transition: max-height 0.5s ease;
             }
-            
             .hidden {
                 opacity: 0;
                 transition: opacity 0.5s ease;
@@ -478,7 +518,6 @@
                     overflow: hidden;
                     transition: max-height 0.5s ease;
                 }
-                
                 .hidden1 {
                     opacity: 0;
                     transition: opacity 0.5s ease;
@@ -488,12 +527,10 @@
                         overflow: hidden;
                         transition: max-height 0.5s ease;
                     }
-                    
                     .hidden2 {
                         opacity: 0;
                         transition: opacity 0.5s ease;
                     }
-              
             #btndd{
                 flex: 1 0 auto;
                 min-width: 300px;
@@ -503,13 +540,11 @@
                 padding-left: 8px;
                 padding-right: 8px;
                 padding-top: 1px;
-
                 background-color: $secondary-color;
                 border: $primary-color solid 2px;
                 color: $primary-color;
                 transition: 0.2s;
                 font-weight: 500;
-
                 #ad{
                     display: block;
                 }
@@ -518,19 +553,15 @@
                     display: none;
                     position: relative;
                 }
-
                 @media(min-width: 1280px){
                     font-size: 17pt;
-                    
                 }
                 &:hover{
                     background-color: $primary-color;
                     border: $secondary-color solid 2px;
                     color: $secondary-color;
                 }
-
             }
-
         }
     }
 }
