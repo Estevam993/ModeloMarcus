@@ -463,6 +463,37 @@
             @media (max-width:320px){
                 margin-right: 10px;
             }
+            .text-container {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s ease;
+            }
+            
+            .hidden {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
+                .text-container1 {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.5s ease;
+                }
+                
+                .hidden1 {
+                    opacity: 0;
+                    transition: opacity 0.5s ease;
+                }
+                    .text-container2 {
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.5s ease;
+                    }
+                    
+                    .hidden2 {
+                        opacity: 0;
+                        transition: opacity 0.5s ease;
+                    }
+              
             #btndd{
                 flex: 1 0 auto;
                 min-width: 300px;
