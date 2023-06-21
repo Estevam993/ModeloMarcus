@@ -7,19 +7,25 @@
     align-items: center;
     padding-top: 40px;
     font-size: 15pt;
+    flex-direction: row;
     color: $primary-color;
 
     #market{
         max-width: 1100px;
         padding: 30px;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
         flex-direction: column;
         text-align: center;
 
         #boxes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+
             #caixa1{
                 display: block;
             }#caixa2{
@@ -27,15 +33,14 @@
             }#caixa3{
                 display: none;
             }
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
         
             .caixas{
                 color: $primary-color;
                 font-size: 12pt;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
                 @media (max-width:780px) {
                     flex-direction: column;            
                 }

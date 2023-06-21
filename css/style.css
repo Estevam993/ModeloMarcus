@@ -507,14 +507,13 @@
   align-items: center;
   padding-top: 40px;
   font-size: 15pt;
+  flex-direction: row;
   color: #172F63;
 }
 #content-5 #market {
   max-width: 1100px;
   padding: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
@@ -538,6 +537,10 @@
 #content-5 #market #boxes .caixas {
   color: #172F63;
   font-size: 12pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 @media (max-width: 780px) {
   #content-5 #market #boxes .caixas {
