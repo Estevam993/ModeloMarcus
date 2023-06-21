@@ -519,6 +519,13 @@
   flex-direction: column;
   text-align: center;
 }
+#content-5 #market #boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 #content-5 #market #boxes #caixa1 {
   display: block;
 }
