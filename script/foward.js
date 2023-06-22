@@ -11,11 +11,9 @@ var estiloCaixa2 = window.getComputedStyle(caixa2)
 var estiloCaixa3 = window.getComputedStyle(caixa3)
 
 function proximo() {
-
     if (estiloCaixa1.getPropertyValue("display") === "block") {
         caixa1.style.display = "none";
         caixa2.style.display = "block";
-
         bola1.style.backgroundColor = "#9c9c9c";
         bola2.style.backgroundColor = "#666666";
     }
@@ -34,3 +32,27 @@ function proximo() {
         bola1.style.backgroundColor = "#666666";
     }
 }
+
+function anterior() {
+
+    if (estiloCaixa1.getPropertyValue("display") === "block") {
+      caixa1.style.display = "none";
+      caixa3.style.display = "block";
+  
+      bola1.style.backgroundColor = "#9c9c9c";
+      bola3.style.backgroundColor = "#666666";
+    }
+    else if (estiloCaixa3.getPropertyValue("display") === "block") {
+      caixa3.style.display = "none";
+      caixa2.style.display = "block";
+  
+      bola3.style.backgroundColor = "#9c9c9c";
+      bola2.style.backgroundColor = "#666666";
+    }else{
+      caixa2.style.display = "none";
+      caixa1.style.display = "block";
+  
+      bola2.style.backgroundColor = "#9c9c9c";
+      bola1.style.backgroundColor = "#666666";
+    }
+  }

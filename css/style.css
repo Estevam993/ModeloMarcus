@@ -502,13 +502,17 @@
 #content-5 {
   background-color: white;
   min-height: 580px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   padding-top: 40px;
   font-size: 15pt;
-  flex-direction: row;
   color: #172F63;
+}
+@media (max-width: 780px) {
+  #content-5 {
+    display: flex;
+  }
 }
 #content-5 #market {
   max-width: 1100px;
@@ -516,7 +520,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 #content-5 #market #boxes {
   justify-content: center;
@@ -570,23 +575,55 @@
 #content-5 #market #boxes .caixas #box h5 {
   margin-left: 4%;
 }
-#content-5 #market #boxes1 {
+
+#content-6 {
+  background-color: white;
+  min-height: 580px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  font-size: 15pt;
+  color: #172F63;
 }
 @media (max-width: 780px) {
-  #content-5 #market #boxes1 {
+  #content-6 {
     display: none;
   }
 }
-#content-5 #market #boxes1 .caixas {
-  color: #172F63;
+#content-6 #textoDesafio {
+  max-width: 1100px;
+  padding: 30px;
+  text-align: center;
+}
+#content-6 #textoDesafio p {
+  margin-top: 25px;
+}
+@media (max-width: 425px) {
+  #content-6 #textoDesafio {
+    font-size: 12pt;
+  }
+}
+#content-6 .page-1 {
   display: block;
+}
+#content-6 .page-2 {
+  display: none;
+}
+#content-6 #desafioBox1 {
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  color: #172F63;
   font-size: 12pt;
 }
-#content-5 #market #boxes1 .caixas #box {
+@media (max-width: 780px) {
+  #content-6 #desafioBox1 {
+    flex-direction: column;
+  }
+}
+#content-6 #desafioBox1 #box {
   width: 279px;
   height: 300px;
   margin: 15px;
@@ -597,11 +634,42 @@
   text-align: start;
   flex: 1 0;
 }
-#content-5 #market #boxes1 .caixas #box img {
+#content-6 #desafioBox1 #box img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-#content-5 #market #boxes1 .caixas #box h5 {
+#content-6 #desafioBox1 #box h5 {
+  margin-left: 4%;
+}
+#content-6 #desafioBox2 {
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #172F63;
+  font-size: 12pt;
+}
+@media (max-width: 780px) {
+  #content-6 #desafioBox2 {
+    flex-direction: column;
+  }
+}
+#content-6 #desafioBox2 #box {
+  width: 279px;
+  height: 300px;
+  margin: 15px;
+  background-color: white;
+  color: #172F63;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: start;
+  flex: 1 0;
+}
+#content-6 #desafioBox2 #box img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#content-6 #desafioBox2 #box h5 {
   margin-left: 4%;
 }
 

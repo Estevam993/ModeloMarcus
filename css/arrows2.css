@@ -1,32 +1,21 @@
-#content-5 #arrows{
-    display: none;
+#content-6 #arrows{
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    @media (max-width:780px){
-        display: flex;
-    }
     #pontos{
         flex-direction: row;
         display: flex;
         margin: 10px;
-        
     }
-    #pontos #dot1{
+    #pontos #dot1-2{
             width: 14px;
             height: 14px;
             background-color: #666666;
             margin: 3px;
             border-radius: 50%;
     }
-    #pontos #dot2{
-        width: 14px;
-        height: 14px;
-        background-color: #9c9c9c;
-        margin: 3px;
-        border-radius: 50%;
-    }
-    #pontos #dot3{
+    #pontos #dot2-2{
         width: 14px;
         height: 14px;
         background-color: #9c9c9c;
