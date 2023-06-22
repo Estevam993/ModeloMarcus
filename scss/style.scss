@@ -5,7 +5,6 @@
 @import "./contents/content-4.scss";
 @import "./contents/content-5.scss";
 @import "./contents/content-6.scss";
-
 *{
     padding: 0px;
     margin: 0px;
@@ -21,7 +20,8 @@
     background-color: $secondary-color;
     width: 100%;
     min-height: 11vh;
-    //position: fixed;
+    position: fixed;
+    z-index: 999;
     header{
         max-width: 1100px;
         min-height: 11vh;
@@ -91,4 +91,38 @@
         }
     }
 
+}
+.footer{
+    flex:1 0;
+    background-color: $primary-color;
+    width: 100%;
+    min-height: 11vh;
+    footer{
+        max-width: 1100px;
+        min-height: 11vh;
+        color: white;
+        background-color: $primary-color;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;    
+
+        #icons{
+            display: flex;
+            
+            flex-direction: row;
+
+            h2{
+                margin: 8px;
+                transition: 0.2s;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.05);
+                    color: $secondary-color;
+                }
+            }
+            
+        }
+    }
 }
