@@ -90,7 +90,12 @@
         @media(max-width:1280px){
             margin-left: 4vh;
         }
-
+        .bES{
+            margin-left: 50%;
+            @media(max-width:780px){
+                margin-left: 0%;
+            }
+        }
         #barraEnfeite{
             width: 15vh;
             height: 3px;

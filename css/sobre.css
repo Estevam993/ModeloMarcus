@@ -91,6 +91,14 @@
     margin-left: 4vh;
   }
 }
+#container #sobre-2 .bES {
+  margin-left: 50%;
+}
+@media (max-width: 780px) {
+  #container #sobre-2 .bES {
+    margin-left: 0%;
+  }
+}
 #container #sobre-2 #barraEnfeite {
   width: 15vh;
   height: 3px;
