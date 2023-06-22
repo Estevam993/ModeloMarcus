@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
+    <!--Flexas bugadas-->
+    <link rel="stylesheet" href="./css/arrows.css">
+
 </head>
 <body>
     <div id="container">
@@ -242,38 +245,60 @@
                     </div>
                 </div>
 
-                <div id="arrows" 
-                style="
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;">
+                <div id="boxes1">
+                    <div id="caixa1" class="caixas">
+                        <div id="box">
+                            <img src="./images/caraMexendoPc.png" alt="caraMexendoPc">
+                            <h5> 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptatum.</h5>
+                        </div>
+                        <div id="box">
+                            <img src="./images/caraMexendoPc.png" alt="caraMexendoPc">
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptatum.</h5>
+                        </div>
+                        <div id="box">
+                            <img src="./images/caraMexendoPc.png" alt="caraMexendoPc">
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptatum.</h5>
+                        </div>
+                    </div>
+                    <div id="caixa2" class="caixas">
+                        <div id="box">
+                            <img src="./images/caraMexendoPc2.png" alt="caraMexendoPc">
+                            <h5> 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptatum.</h5>
+                        </div>
+                        <div id="box">
+                            <img src="./images/caraMexendoPc2.png" alt="caraMexendoPc">
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptatum.</h5>
+                        </div>
+                        <div id="box">
+                            <img src="./images/caraMexendoPc2.png" alt="caraMexendoPc">
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptatum.</h5>
+                        </div>
+                        <div id="caixa3" class="caixas">
+                            <div id="box">
+                                <img src="./images/caraMexendoPc3.png" alt="caraMexendoPc">
+                                <h5> 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptatum.</h5>
+                            </div>
+                            <div id="box">
+                                <img src="./images/caraMexendoPc3.png" alt="caraMexendoPc">
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptatum.</h5>
+                            </div>
+                            <div id="box">
+                                <img src="./images/caraMexendoPc3.png" alt="caraMexendoPc">
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptatum.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="arrows">
                     <button class="btn btn-outline-primary" onclick="anterior()"> 
                         <i class="bi bi-arrow-left"></i>
                     </button>
-                    <div id="pontos" style="
-                    flex-direction: row;
-                    display: flex;
-                    margin: 10px;">
-                            <div id="dot1" class="dots"style="
-                        width: 14px;
-                        height: 14px;
-                        background-color: #666666;
-                        margin: 3px;
-                        border-radius: 50%;"></div>
-                            <div id="dot2" class="dots"style="
-                        width: 14px;
-                        height: 14px;
-                        background-color: #9c9c9c;
-                        margin: 3px;
-                        border-radius: 50%;"></div>
+                    <div id="pontos" style="">
+                            <div id="dot1" class="dots"style=""></div>
+                            <div id="dot2" class="dots"style=""></div>
                             <div id="dot3" class="dots"
-                            style="
-                        width: 14px;
-                        height: 14px;
-                        background-color: #9c9c9c;
-                        margin: 3px;
-                        border-radius: 50%;">
+                            style="">
                         </div>
                     </div>
                 <button class="btn btn-outline-primary" onclick="proximo()"> 
@@ -281,6 +306,7 @@
                 </button>
                 </div>
             </div>
+            
         </div>
         <footer>
 
