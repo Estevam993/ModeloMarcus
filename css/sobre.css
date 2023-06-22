@@ -5,12 +5,23 @@
   box-sizing: border-box;
 }
 
-#container {
-  background-color: white;
+#container header {
+  z-index: 999;
 }
 #container header a {
   text-decoration: none;
   color: white;
+}
+#container header #dropdown {
+  display: none;
+}
+@media (max-width: 1023px) {
+  #container header #links {
+    display: none;
+  }
+  #container header #dropdown {
+    display: block;
+  }
 }
 #container #sobre-1 {
   flex: 1 0 auto;
@@ -19,7 +30,7 @@
   justify-content: center;
   align-items: center;
   background-color: #172F63;
-  color: #FFAA00;
+  color: #cf8a00;
   padding-top: 11vh;
 }
 #container #sobre-1 #imgback {
@@ -42,8 +53,8 @@
   max-width: 480px;
   position: relative;
   z-index: 1; /* Ajustado o z-index para que a imagem fique acima do gradiente */
-  mask-image: linear-gradient(to left, transparent, black); /* Aplicando o gradiente como máscara */
-  -webkit-mask-image: linear-gradient(to left, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
+  mask-image: linear-gradient(to bottom, transparent, black); /* Aplicando o gradiente como máscara */
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
 }
 #container #sobre-1 #imgback #imgMonitor {
   height: 500px;
@@ -53,7 +64,7 @@
   -webkit-mask-image: linear-gradient(to left, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
 }
 #container #sobre-1 #About {
-  z-index: 999;
+  z-index: 99;
   width: 300px;
   position: absolute;
   margin-left: 35vh;
@@ -77,45 +88,49 @@
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 45vh;
+}
+#container #sobre-2 #contatos {
   max-width: 1100px;
-  align-items: start;
   flex-direction: column;
   text-align: start;
   background-color: white;
   color: #172F63;
-  margin: auto;
-  margin-top: 10vh;
 }
 @media (max-width: 1280px) {
-  #container #sobre-2 {
+  #container #sobre-2 #contatos {
     margin-left: 4vh;
   }
 }
-#container #sobre-2 .bES {
+#container #sobre-2 #contatos .bES {
   margin-left: 50%;
 }
 @media (max-width: 780px) {
-  #container #sobre-2 .bES {
+  #container #sobre-2 #contatos .bES {
     margin-left: 0%;
   }
 }
-#container #sobre-2 #barraEnfeite {
+#container #sobre-2 #contatos #barraEnfeite {
   width: 15vh;
   height: 3px;
   background: linear-gradient(to right, #FFAA00, #172F63);
 }
 @media (max-width: 480) {
-  #container #sobre-2 #textAbout {
+  #container #sobre-2 #contatos #textAbout {
     width: 280px;
   }
 }
-#container #sobre-2 #socialMedia {
+#container #sobre-2 #contatos #socialMedia {
   margin-top: 1vh;
   display: flex;
   flex-direction: row;
   align-items: end;
+  background-color: white;
+  width: 100%;
 }
-#container #sobre-2 #socialMedia .icone {
+#container #sobre-2 #contatos #socialMedia .icone {
   padding-top: 0.8vh;
   display: flex;
   align-items: center;
@@ -129,9 +144,70 @@
   transition: 0.2s;
   cursor: pointer;
 }
-#container #sobre-2 #socialMedia .icone:hover {
+#container #sobre-2 #contatos #socialMedia .icone:hover {
   background-color: #FFAA00;
   transform: scale(1.04);
+}
+#container #sobre-3 {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #172F63;
+  min-height: 45vh;
+  flex-wrap: wrap;
+}
+#container #sobre-3 #missao {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  max-width: 1100px;
+  flex-direction: column;
+  display: flex;
+  text-align: start;
+  background-color: transparent;
+  color: #cf8a00;
+}
+@media (max-width: 780px) {
+  #container #sobre-3 #missao {
+    margin-left: 5vh;
+  }
+}
+#container #sobre-3 #missao #mission {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  #container #sobre-3 #missao #mission {
+    flex-direction: column;
+  }
+}
+#container #sobre-3 #missao #mission #box {
+  cursor: pointer;
+  flex: 1 0 auto;
+  margin-right: 5vh;
+  padding: 2vh;
+  background-color: #172F63;
+  border: #FFAA00 solid 1px;
+  border-radius: 35px;
+  width: 35vh;
+  max-height: 30vh;
+  transition: 0.5s;
+}
+@media (max-width: 1024px) {
+  #container #sobre-3 #missao #mission #box {
+    margin-top: 4vh;
+  }
+}
+#container #sobre-3 #missao #mission #box h2 {
+  margin-top: 3vh;
+}
+#container #sobre-3 #missao #mission #box:hover {
+  transform: scale(1.1);
+  background-color: #FFAA00;
+  color: #172F63;
+  border: none;
 }
 
 /*# sourceMappingURL=sobre.css.map */
