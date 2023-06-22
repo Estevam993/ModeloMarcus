@@ -1,3 +1,76 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 
+#container {
+  background-color: #172F63;
+}
+#container header a {
+  text-decoration: none;
+  color: white;
+}
+#container #sobre-1 {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #172F63;
+  color: #FFAA00;
+  padding-top: 11vh;
+}
+#container #sobre-1 #imgback {
+  position: relative;
+  color: #FFAA00;
+  max-height: 800px;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  #container #sobre-1 #imgback #imgMonitor {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  #container #sobre-1 #imgback #imgCelular {
+    display: none;
+  }
+}
+#container #sobre-1 #imgback #imgCelular {
+  max-width: 480px;
+  position: relative;
+  z-index: 1; /* Ajustado o z-index para que a imagem fique acima do gradiente */
+  mask-image: linear-gradient(to left, transparent, black); /* Aplicando o gradiente como máscara */
+  -webkit-mask-image: linear-gradient(to left, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
+}
+#container #sobre-1 #imgback #imgMonitor {
+  height: 500px;
+  position: relative;
+  z-index: 1; /* Ajustado o z-index para que a imagem fique acima do gradiente */
+  mask-image: linear-gradient(to left, transparent, black); /* Aplicando o gradiente como máscara */
+  -webkit-mask-image: linear-gradient(to left, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
+}
+#container #sobre-1 #About {
+  z-index: 999;
+  width: 300px;
+  position: absolute;
+  margin-left: 35vh;
+}
+@media (max-width: 1024px) {
+  #container #sobre-1 #About {
+    margin-left: 15vh;
+  }
+}
+@media (max-width: 780px) {
+  #container #sobre-1 #About {
+    margin-left: 5vh;
+  }
+}
+@media (max-width: 480px) {
+  #container #sobre-1 #About {
+    margin-left: 1vh;
+  }
+}
 
 /*# sourceMappingURL=sobre.css.map */

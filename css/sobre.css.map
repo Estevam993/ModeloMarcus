@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"sobre.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/pages%20scss/sobre.scss","../scss/colors/colors.scss"],"names":[],"mappings":";AAEA;EACI;EACA;EACA;;;AAGJ;EACI,kBCTY;;ADWR;EACI;EACA;;AAGR;EACI;EACA;EACA;EACA;EACA,kBCrBQ;EDuBR,OCrBU;EDsBV;;AACA;EACI;EACA,OCzBM;ED0BN;EACA;;AACA;EACI;IACI;;;AAGR;EACI;IACI;;;AAGR;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACE;EACA;EACA;EACA;EACA;;AAIN;EACI;EACA;EACA;EACA;;AACA;EALJ;IAMQ;;;AAEJ;EARJ;IAUQ;;;AAEJ;EAZJ;IAaQ","file":"sobre.css"}

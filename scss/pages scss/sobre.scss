@@ -1,0 +1,75 @@
+@import "../colors/colors.scss";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color: $primary-color;
+    header{
+        a{
+            text-decoration: none;
+            color: white;            
+        }
+    }
+    #sobre-1{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+
+        color: $secondary-color;
+        padding-top: 11vh;
+        #imgback {
+            position: relative;
+            color: $secondary-color;
+            max-height: 800px;
+            width: 100%;
+            @media (max-width:480px){
+                #imgMonitor{
+                    display: none;
+                }
+            }
+            @media (min-width:480px){
+                #imgCelular{
+                    display: none;
+                }
+            }
+            #imgCelular{
+                max-width: 480px;
+                position: relative;
+                z-index: 1; /* Ajustado o z-index para que a imagem fique acima do gradiente */
+                mask-image: linear-gradient(to left, transparent, black); /* Aplicando o gradiente como máscara */
+                -webkit-mask-image: linear-gradient(to left, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
+              }
+          
+            #imgMonitor{
+              height: 500px;
+              position: relative;
+              z-index: 1; /* Ajustado o z-index para que a imagem fique acima do gradiente */
+              mask-image: linear-gradient(to left, transparent, black); /* Aplicando o gradiente como máscara */
+              -webkit-mask-image: linear-gradient(to left, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
+            }
+            
+        }
+        #About{
+            z-index: 999;
+            width: 300px;
+            position: absolute;
+            margin-left: 35vh;
+            @media(max-width:1024px){
+                margin-left: 15vh;
+            }
+            @media(max-width:780px){
+
+                margin-left: 5vh;
+            }
+            @media(max-width:480px){
+                margin-left: 1vh;
+            }
+        }
+    }
+}
