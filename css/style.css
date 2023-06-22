@@ -509,7 +509,7 @@
   font-size: 15pt;
   color: #172F63;
 }
-@media (max-width: 780px) {
+@media (max-width: 927px) {
   #content-5 {
     display: flex;
   }
@@ -522,17 +522,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 #content-5 #market #boxes {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  display: none;
-}
-@media (max-width: 780px) {
-  #content-5 #market #boxes {
-    display: flex;
-  }
 }
 #content-5 #market #boxes #caixa1 {
   display: block;
@@ -586,7 +581,7 @@
   font-size: 15pt;
   color: #172F63;
 }
-@media (max-width: 780px) {
+@media (max-width: 927px) {
   #content-6 {
     display: none;
   }
