@@ -120,6 +120,7 @@
 @media (max-width: 480) {
   #container #sobre-2 #contatos #textAbout {
     width: 280px;
+    margin-right: 4vh;
   }
 }
 #container #sobre-2 #contatos #socialMedia {

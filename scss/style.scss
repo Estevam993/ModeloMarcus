@@ -9,18 +9,17 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-}/*
+}
 ::-webkit-scrollbar{
-    width: 2vh;
+    width: 0vh;
 }
 ::-webkit-scrollbar-track{
-    background-color: $secondary-color-2;
+    background-color: transparent;
 }
 ::-webkit-scrollbar-thumb{
     border-radius: 25px;
-    background-color: $primary-color-1;
+    background-color: transparent;
 }
-*/
 
 #container{
     background-color: $secondary-color;
