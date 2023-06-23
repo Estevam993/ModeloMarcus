@@ -1,0 +1,20 @@
+body #container #soluc-1 {
+  background-color: #e69900;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12vh;
+  max-width: 1100vh;
+  height: 480px;
+  text-align: start; }
+  @media (max-width: 1280px) {
+    body #container #soluc-1 {
+      padding-left: 4vh;
+      padding-right: 4vh; } }
+  body #container #soluc-1 h1 {
+    font-weight: 900; }
+    body #container #soluc-1 h1 strong {
+      color: #172F63; }
+
+/*# sourceMappingURL=soluc.css.map */

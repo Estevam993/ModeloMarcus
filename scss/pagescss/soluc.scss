@@ -1,0 +1,23 @@
+@import "../colors/colors.scss";
+
+body #container #soluc-1{
+    background-color: #e69900;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vh;
+    max-width: 1100vh;
+    height: 480px;
+    text-align: start;
+    @media (max-width: 1280px){
+        padding-left: 4vh;
+        padding-right: 4vh;
+    }
+    h1{
+        font-weight: 900;
+        strong{
+            color:$primary-color;
+        }
+    }
+}
