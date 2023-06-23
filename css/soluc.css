@@ -126,26 +126,41 @@ body #container #soluc-1 {
             font-size: 12pt; }
     #soluc-2 #sol #opcoes2 {
       display: none;
-      align-items: center;
-      justify-content: start;
+      align-items: start;
+      justify-content: space-evenly;
       flex-direction: row;
       flex: 1 0 auto; }
       @media (min-width: 781px) {
         #soluc-2 #sol #opcoes2 {
           display: flex; } }
-      #soluc-2 #sol #opcoes2 #botoes2 button {
-        flex: 1 0 auto;
-        min-width: 300px;
-        height: 37px;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-top: 1px;
-        background-color: #FFAA00;
-        border: #172F63 solid 2px;
-        color: #172F63;
-        transition: 0.2s;
-        font-weight: 500; }
+      #soluc-2 #sol #opcoes2 #botoes2 {
+        margin-top: 2.2vh; }
+        #soluc-2 #sol #opcoes2 #botoes2 button {
+          flex: 1 0 auto;
+          min-width: 300px;
+          height: 4vh;
+          display: flex;
+          justify-content: space-between;
+          padding-left: 8px;
+          margin-bottom: 1vh;
+          background-color: transparent;
+          border: none;
+          border-bottom: #FFAA00 solid 2px; }
+        #soluc-2 #sol #opcoes2 #botoes2 #midiaB {
+          border-bottom: #172F63 solid 2px; }
+      #soluc-2 #sol #opcoes2 #textos {
+        width: 60vh; }
+        #soluc-2 #sol #opcoes2 #textos .texto {
+          display: flex;
+          flex-direction: column;
+          padding-left: 1.5vh;
+          border-radius: 2vh;
+          margin-bottom: 2vh;
+          margin-top: 2vh;
+          box-shadow: 4px 4px 25px 4px #b6b6b6ab; }
+        #soluc-2 #sol #opcoes2 #textos #texto2 {
+          display: none; }
+        #soluc-2 #sol #opcoes2 #textos #texto3 {
+          display: none; }
 
 /*# sourceMappingURL=soluc.css.map */

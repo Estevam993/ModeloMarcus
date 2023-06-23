@@ -35,6 +35,7 @@ body #container #soluc-1{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        
         @media (min-width:640px){
             justify-content: space-evenly;
             flex-direction: row;
@@ -148,8 +149,8 @@ body #container #soluc-1{
         }
         #opcoes2{
             display: none;
-            align-items: center;
-            justify-content: start;
+            align-items: start;
+            justify-content: space-evenly;
             flex-direction: row;
             flex:1 0 auto;
 
@@ -157,21 +158,44 @@ body #container #soluc-1{
                 display: flex;
             }
             #botoes2{
+                margin-top: 2.2vh;
                 button{
-                    
                     flex: 1 0 auto;
                     min-width: 300px;
-                    height: 37px;
+                    height: 4vh;
                     display: flex;
                     justify-content: space-between;
                     padding-left: 8px;
-                    padding-right: 8px;
-                    padding-top: 1px;
-                    background-color: $secondary-color;
-                    border: $primary-color solid 2px;
-                    color: $primary-color;
-                    transition: 0.2s;
-                    font-weight: 500;
+
+                    margin-bottom: 1vh;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: $secondary-color solid 2px;
+                }
+                #midiaB{
+                    
+                    border-bottom: $primary-color solid 2px;
+                }
+            }
+            #textos{
+                width: 60vh;
+
+                .texto{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 1.5vh;
+                    border-radius: 2vh;
+                    margin-bottom: 2vh;
+                    margin-top: 2vh;
+                    box-shadow: 4px 4px 25px 4px #b6b6b6ab;
+                    #minibox{
+                    }
+                }
+                #texto2{
+                    display: none;
+                }
+                #texto3{
+                    display: none;
                 }
             }
         }
