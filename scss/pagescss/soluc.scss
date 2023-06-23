@@ -152,10 +152,16 @@ body #container #soluc-1{
             justify-content: space-evenly;
             flex-direction: row;
             flex:1 0 auto;
-
             @media(min-width:1280px){
                 padding-left: 5vh;
                 padding-right: 5vh;
+                justify-content: center;
+                #botoes2{
+                    margin-right: 10vh;
+                }
+                #textos{
+                    margin-left: 10vh;
+                }
             }
 
             @media(min-width: 781px){
@@ -173,17 +179,17 @@ body #container #soluc-1{
                     margin-bottom: 1vh;
                     background-color: transparent;
                     border: none;
-                    border-bottom: $secondary-color solid 2px;
+                    border-bottom: $secondary-color solid 3px;
+
                     &:hover{
                         p{
                             padding-left: .3vh;
-
+                            transform: scale(1.1);
                         }
                     }
                 }
-                #midiaB{
-                    
-                    border-bottom: $primary-color solid 2px;
+                #midiaB{                    
+                    border-bottom: $primary-color solid 3px;
                 }
             }
             #textos{
@@ -193,6 +199,7 @@ body #container #soluc-1{
                     display: flex;
                     flex-direction: column;
                     padding-left: 1.5vh;
+                    padding-top: 0.5vh;
                     border-radius: 2vh;
                     margin-bottom: 2vh;
                     margin-top: 2vh;

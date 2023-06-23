@@ -132,7 +132,12 @@ body #container #soluc-1 {
       @media (min-width: 1280px) {
         #soluc-2 #sol #opcoes2 {
           padding-left: 5vh;
-          padding-right: 5vh; } }
+          padding-right: 5vh;
+          justify-content: center; }
+          #soluc-2 #sol #opcoes2 #botoes2 {
+            margin-right: 10vh; }
+          #soluc-2 #sol #opcoes2 #textos {
+            margin-left: 10vh; } }
       @media (min-width: 781px) {
         #soluc-2 #sol #opcoes2 {
           display: flex; } }
@@ -148,17 +153,19 @@ body #container #soluc-1 {
           margin-bottom: 1vh;
           background-color: transparent;
           border: none;
-          border-bottom: #FFAA00 solid 2px; }
+          border-bottom: #FFAA00 solid 3px; }
           #soluc-2 #sol #opcoes2 #botoes2 button:hover p {
-            padding-left: .3vh; }
+            padding-left: .3vh;
+            transform: scale(1.1); }
         #soluc-2 #sol #opcoes2 #botoes2 #midiaB {
-          border-bottom: #172F63 solid 2px; }
+          border-bottom: #172F63 solid 3px; }
       #soluc-2 #sol #opcoes2 #textos {
         width: 60vh; }
         #soluc-2 #sol #opcoes2 #textos .texto {
           display: flex;
           flex-direction: column;
           padding-left: 1.5vh;
+          padding-top: 0.5vh;
           border-radius: 2vh;
           margin-bottom: 2vh;
           margin-top: 2vh;
