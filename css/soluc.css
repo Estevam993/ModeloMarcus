@@ -17,4 +17,135 @@ body #container #soluc-1 {
     body #container #soluc-1 h1 strong {
       color: #172F63; }
 
+#soluc-2 {
+  background-color: white;
+  min-height: 580px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  font-size: 15pt;
+  color: #172F63; }
+  #soluc-2 #sol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    @media (min-width: 640px) {
+      #soluc-2 #sol {
+        justify-content: space-evenly;
+        flex-direction: row; } }
+    @media (max-width: 425px) {
+      #soluc-2 #sol {
+        margin-left: 40px; } }
+    @media (max-width: 320px) {
+      #soluc-2 #sol {
+        margin-left: 10px; } }
+    @media (min-width: 1280px) {
+      #soluc-2 #sol #solucoes {
+        width: 500px;
+        font-size: 18pt; } }
+    @media (min-width: 640px) {
+      #soluc-2 #sol #solucoes {
+        width: 300px; } }
+    #soluc-2 #sol #opcoes {
+      display: none;
+      flex-direction: column;
+      max-width: 400px;
+      justify-content: center; }
+      @media (max-width: 780px) {
+        #soluc-2 #sol #opcoes {
+          display: flex; } }
+      @media (max-width: 425px) {
+        #soluc-2 #sol #opcoes {
+          margin-right: 40px; } }
+      @media (max-width: 320px) {
+        #soluc-2 #sol #opcoes {
+          margin-right: 10px; } }
+      #soluc-2 #sol #opcoes .text-container {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease; }
+      #soluc-2 #sol #opcoes .hidden {
+        opacity: 0;
+        transition: opacity 0.5s ease; }
+      #soluc-2 #sol #opcoes .text-container1 {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease; }
+      #soluc-2 #sol #opcoes .hidden1 {
+        opacity: 0;
+        transition: opacity 0.5s ease; }
+      #soluc-2 #sol #opcoes .text-container2 {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease; }
+      #soluc-2 #sol #opcoes .hidden2 {
+        opacity: 0;
+        transition: opacity 0.5s ease; }
+      #soluc-2 #sol #opcoes #btndd {
+        flex: 1 0 auto;
+        min-width: 300px;
+        height: 37px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 1px;
+        background-color: #FFAA00;
+        border: #172F63 solid 2px;
+        color: #172F63;
+        transition: 0.2s;
+        font-weight: 500; }
+        #soluc-2 #sol #opcoes #btndd #ad {
+          display: block; }
+        #soluc-2 #sol #opcoes #btndd #au {
+          display: none;
+          position: relative; }
+        @media (min-width: 1280px) {
+          #soluc-2 #sol #opcoes #btndd {
+            font-size: 17pt; } }
+        #soluc-2 #sol #opcoes #btndd:hover {
+          background-color: #172F63;
+          border: #FFAA00 solid 2px;
+          color: #FFAA00; }
+      #soluc-2 #sol #opcoes .hiddenText {
+        margin-left: 1vh;
+        display: flex;
+        flex-direction: column; }
+        #soluc-2 #sol #opcoes .hiddenText #miniBox {
+          text-align: start;
+          margin: auto;
+          padding-left: 1vh;
+          padding-top: 1vh;
+          width: 27vh;
+          flex: 1 0 auto;
+          border-radius: 2vh;
+          margin-bottom: 2vh;
+          box-shadow: 2px 2px 25px 2px rgba(182, 182, 182, 0.671); }
+          #soluc-2 #sol #opcoes .hiddenText #miniBox p {
+            font-size: 12pt; }
+    #soluc-2 #sol #opcoes2 {
+      display: none;
+      align-items: center;
+      justify-content: start;
+      flex-direction: row;
+      flex: 1 0 auto; }
+      @media (min-width: 781px) {
+        #soluc-2 #sol #opcoes2 {
+          display: flex; } }
+      #soluc-2 #sol #opcoes2 #botoes2 button {
+        flex: 1 0 auto;
+        min-width: 300px;
+        height: 37px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 1px;
+        background-color: #FFAA00;
+        border: #172F63 solid 2px;
+        color: #172F63;
+        transition: 0.2s;
+        font-weight: 500; }
+
 /*# sourceMappingURL=soluc.css.map */
