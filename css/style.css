@@ -548,6 +548,9 @@
     justify-content: space-between;
     align-items: center;
     margin: auto; }
+    @media (max-width: 1024px) {
+      .footer footer {
+        justify-content: space-evenly; } }
     .footer footer #icons {
       display: flex;
       flex-direction: row; }

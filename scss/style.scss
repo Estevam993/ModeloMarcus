@@ -41,6 +41,10 @@
         align-items: center;
         margin: auto;    
 
+        @media (max-width:1024px) {
+            justify-content: space-evenly;            
+        }
+
         #icons{
             display: flex;
             

@@ -41,6 +41,7 @@ body {
         #imgback {
             position: relative;
             color: $secondary-color;
+            background-size: cover;
             
             min-width: 320px;
             max-height: 800px;
@@ -53,8 +54,7 @@ body {
             @media (min-width:480px){
                 #imgCelular{
                     display: none;
-                }
-                
+                }                
             }
             #imgCelular{
                 max-width: 480px;
