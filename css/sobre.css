@@ -20,7 +20,7 @@
     display: none;
   }
   #container header #dropdown {
-    display: block;
+    display: none;
   }
 }
 #container #sobre-1 {

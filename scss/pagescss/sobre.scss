@@ -23,9 +23,6 @@ body {
             #links{
                 display: none;
             }
-            #dropdown{
-                display: none;
-            }
         }
     }
     #sobre-1{
@@ -38,6 +35,26 @@ body {
 
         color: $secondary-color-2;
         padding-top: 11vh;
+        #imgCelular1{
+            display: none;
+        }
+        #imgCelular2{
+            display: none;
+        }
+        
+        #imgCelular3{
+            display: none;
+        }
+        
+        #imgCelular4{
+            display: none;
+        }
+        #imgCelular5{
+            display: none;
+        }
+        #imgMonitor{
+            display: block;
+        }
         #imgback {
             position: relative;
             color: $secondary-color;
@@ -46,18 +63,154 @@ body {
             min-width: 320px;
             max-height: 800px;
             width: 100%;
-            @media (max-width:480px){
+            @media(max-width:1024px){
+                #imgMonitor{
+                    max-width: 1024px;
+                }
+            }
+            @media (max-width:780px){
+                
+                #imgCelular2{
+                    display: none;
+                }
+                #imgCelular1{
+                    display: none;
+                }
+                #imgCelular3{
+                    display: none;
+                }
+                
+                #imgCelular4{
+                    display: none;
+                }
+                #imgCelular5{
+                    display: none;
+                }
+                #imgMonitor{
+                    max-width: 780px;
+                    display: block;
+                }
+            }
+            @media (max-width:560px){
+                #imgCelular2{
+                    display: none;
+                }
+                #imgCelular1{
+                    display: none;
+                }
+                #imgCelular3{
+                    display: none;
+                }
+                
+                #imgCelular4{
+                    display: block;
+                }
+                #imgCelular5{
+                    display: none;
+                }
                 #imgMonitor{
                     display: none;
                 }
             }
-            @media (min-width:480px){
-                #imgCelular{
+            @media (max-width:425px){
+                #imgCelular2{
                     display: none;
-                }                
+                }
+                #imgCelular1{
+                    display: none;
+                }
+                #imgCelular3{
+                    display: block;
+                }
+                
+                #imgCelular4{
+                    display: none;
+                }
+                #imgCelular5{
+                    display: none;
+                }
+                #imgMonitor{
+                    display: none;
+                }
             }
-            #imgCelular{
-                max-width: 480px;
+            @media (max-width:375px){
+                #imgCelular2{
+                    display: block;
+                }
+                #imgCelular1{
+                    display: none;
+                }
+                #imgCelular3{
+                    display: none;
+                }
+                
+                #imgCelular4{
+                    display: none;
+                }
+                
+                #imgCelular5{
+                    display: none;
+                }
+                #imgMonitor{
+                    display: none;
+                }
+            }
+            @media (max-width:320px){
+                #imgCelular1{
+                    display: block;
+                }
+                #imgCelular2{
+                    display: none;
+                }
+                
+                #imgCelular3{
+                    display: none;
+                }
+                
+                #imgCelular4{
+                    display: none;
+                }
+                
+                #imgCelular5{
+                    display: none;
+                }
+                #imgMonitor{
+                    display: none;
+                }
+
+            }
+            #imgCelular1{
+                max-width: 320px;
+                position: relative;
+                z-index: 1; /* Ajustado o z-index para que a imagem fique acima do gradiente */
+                mask-image: linear-gradient(to bottom, transparent, black); /* Aplicando o gradiente como máscara */
+                -webkit-mask-image: linear-gradient(to bottom, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
+            }
+            #imgCelular2{
+                max-width: 375px;
+                position: relative;
+                z-index: 1; /* Ajustado o z-index para que a imagem fique acima do gradiente */
+                mask-image: linear-gradient(to bottom, transparent, black); /* Aplicando o gradiente como máscara */
+                -webkit-mask-image: linear-gradient(to bottom, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
+            }
+            #imgCelular3{
+                max-width: 425px;
+                position: relative;
+                z-index: 1; /* Ajustado o z-index para que a imagem fique acima do gradiente */
+                mask-image: linear-gradient(to bottom, transparent, black); /* Aplicando o gradiente como máscara */
+                -webkit-mask-image: linear-gradient(to bottom, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
+            }
+            
+            #imgCelular4{
+                max-width: 560px;
+                position: relative;
+                z-index: 1; /* Ajustado o z-index para que a imagem fique acima do gradiente */
+                mask-image: linear-gradient(to bottom, transparent, black); /* Aplicando o gradiente como máscara */
+                -webkit-mask-image: linear-gradient(to bottom, transparent, black); /* Adicionando prefixo -webkit para compatibilidade com navegadores mais antigos */
+            }
+            
+            #imgCelular5{
+                max-width: 780px;
                 position: relative;
                 z-index: 1; /* Ajustado o z-index para que a imagem fique acima do gradiente */
                 mask-image: linear-gradient(to bottom, transparent, black); /* Aplicando o gradiente como máscara */
