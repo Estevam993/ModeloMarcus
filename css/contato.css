@@ -1,0 +1,72 @@
+#contato-1 {
+  background-color: #172F63;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12vh;
+  min-height: 480px;
+  text-align: start; }
+  #contato-1 #textos {
+    max-width: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column; }
+    @media (min-width: 1280px) {
+      #contato-1 #textos {
+        margin-right: 30vh; } }
+    @media (min-width: 780px) {
+      #contato-1 #textos {
+        padding-right: 15vh; } }
+    @media (min-width: 580px) {
+      #contato-1 #textos {
+        padding-right: 5vh; } }
+  #contato-1 #texto1 {
+    margin-top: 3vh;
+    min-width: 280px;
+    max-width: 580px;
+    padding: 2vh; }
+  #contato-1 #be {
+    width: 7vh;
+    height: 5px;
+    background-color: #FFAA00;
+    margin-top: 2vh;
+    margin-bottom: 2vh; }
+  #contato-1 #texto2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    min-width: 280px;
+    padding: 2vh; }
+    #contato-1 #texto2 #cont {
+      display: flex;
+      font-size: large;
+      width: 280px;
+      height: 7vh;
+      flex-direction: row;
+      transition: 0.3s ease; }
+      #contato-1 #texto2 #cont:hover {
+        color: #FFAA00; }
+      #contato-1 #texto2 #cont h3 {
+        margin-right: 4vh; }
+  #contato-1 #texto3 {
+    padding: 2vh;
+    display: flex;
+    height: 15vh;
+    margin-bottom: 7vh; }
+    #contato-1 #texto3 #icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      width: 27vh;
+      flex-wrap: wrap; }
+      #contato-1 #texto3 #icons h2 {
+        margin-right: 4vh;
+        transition: 0.3s ease; }
+        #contato-1 #texto3 #icons h2:hover {
+          color: #FFAA00; }
+
+/*# sourceMappingURL=contato.css.map */
