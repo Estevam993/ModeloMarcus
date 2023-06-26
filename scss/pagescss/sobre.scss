@@ -5,7 +5,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+body {
+    overflow-x: hidden;
+}  
 #container{
     header{
         z-index: 999;
@@ -22,7 +24,7 @@
                 display: none;
             }
             #dropdown{
-                display: block;
+                display: none;
             }
         }
     }
@@ -39,6 +41,8 @@
         #imgback {
             position: relative;
             color: $secondary-color;
+            
+            min-width: 320px;
             max-height: 800px;
             width: 100%;
             @media (max-width:480px){
@@ -50,6 +54,7 @@
                 #imgCelular{
                     display: none;
                 }
+                
             }
             #imgCelular{
                 max-width: 480px;
